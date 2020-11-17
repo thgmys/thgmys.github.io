@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>Home Page</title>
+    <title>Projects Page</title>
 </head>
 
 <body>
@@ -16,45 +16,77 @@
         <div class="logo-container">
             <img class="photo-shape photo-size" src="./img/bostonPipes.jpg" alt="logo">
             <h4 class="logo">Mark Lysaght</h4>
+            <a class="header-link" href="./index.html">Home</a>
+
         </div>
         <nav>
-            <ul class="nav-links">
-                <li> <a class="nav-link" href="./index.html">Home</a></li>
-                <li> <a class="nav-link" href="./about.html">About Me</a></li>
-                <li> <a class="nav-link" href="./contact.html">Contact</a></li>
+            <ul class="header-links">
+                <li> <a class="header-link" href="./projects.html">Projects</a></li>
+                <li> <a class="header-link" href="./about.html">About Me</a></li>
+                <li> <a class="header-link" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="projects">
+
+        <section class="current-projects">
+            <h2>Discord Bot</h2>
+            <p>Have been working on making a discord bot</p>
+            <p>discord-bot
+                <a href=""></a>
+            </p>
+            <p>Language: JavaScript</p>
+
+        </section>
+
+        <section class="finished-projects">
             <div class="explanation">
 
-                <!--
-                <h1></h1>
-                <p></p>
-                <p>
-                    <a href=""></a>
-                </p>
-                <p></p>
 
-            -->
-
-
-                <h1>Bitset and Bloom Filter</h1>
-                <p>Created a bitset and bloom filter for a college assignment</p>
-                <p><a href="#">bitset/bloom</a></p>
-                <p>C</p>
                 <hr class="project-separator">
-                <h1>DiceGame</h1>
+
+                <h2>Register File</h2>
+                <p>Created a 32 bit register file for a college assignment</p>
+                <p>
+                    registerFile32
+                    <a href="#"></a>
+                </p>
+                <p>Language: VHDL</p>
+
+                <hr class="project-separator">
+
+                <h2>Bitset and Bloom Filter</h2>
+                <p>Created a bitset and bloom filter for a college assignment.</p>
+                <p>bitset/bloom
+                    <a href="#"></a>
+                </p>
+                <p>Language: C</p>
+
+                <hr class="project-separator">
+
+                <h2>SubArray</h2>
+                <p>Created a program for college to check if an array was a subarray of a larger array.</p>
+                <p><a href="https://github.com/marklysaght/college-programs/blob/main/computing/lab2-subarray.s">subArray</a></p>
+                <p>Language: ARM Assembly</p>
+
+                <hr class="project-separator">
+
+                <h2>DiceGame</h2>
                 <p>Created a dice game for a college assignment where the user has to bet on a choice of results if the next dice rolled will be higher, lower, within a range or all equal.
                 </p>
-                <p><a href="#">DiceGame</a></p>
-                <p>Java</p>
 
+                <p><a href="https://github.com/marklysaght/college-programs/tree/main/java/diceGame">DiceGame</a></p>
 
+                <p>Language: Java</p>
+                <hr class="project-separator">
+                <h2>LewisCarrollPuzzle</h2>
+                <p>Created a game for a college assignment where the user has to input a set of words that follow the rules of the word game. The words have to link by differing by a single letter in succession without removing or gaining letters.
+                </p>
 
+                <p><a href="https://github.com/marklysaght/college-programs/tree/main/java/lewisCarroll">LewisCarroll</a></p>
 
+                <p>Language: Java</p>
             </div>
         </section>
     </main>

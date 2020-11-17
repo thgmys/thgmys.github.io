@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
     box-sizing: border-box;
     /* These are technically the same, but use both */
@@ -30,8 +30,21 @@ body {
     background: rgba(88, 255, 152, 0.541);
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+    ;
+}
+
 p {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 footer {
@@ -59,7 +72,7 @@ footer {
 }
 
 .logo-container,
-.nav-links {
+.header-links {
     display: flex;
 }
 
@@ -67,6 +80,7 @@ footer {
     background: rgba(43, 161, 14, 0.575);
     flex: 0.5;
     align-items: center;
+    border-radius: 10em;
 }
 
 .logo {
@@ -80,12 +94,12 @@ nav {
     text-align: center;
 }
 
-.nav-links {
+.header-links {
     justify-content: space-around;
     list-style: none;
 }
 
-.nav-link {
+.header-link {
     text-decoration: none;
 }
 
