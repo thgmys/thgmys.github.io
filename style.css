@@ -110,3 +110,8 @@ nav {
 .introduction {
     display: flex;
 }
+
+.submission {
+    padding: 10%;
+    text-align: center;
+}
