@@ -1,6 +1,6 @@
 "use strict";
 
-var emails = []; // example {id:1592304983049, title: 'Deadpool', year: 2015}
+var emails = [];
 
 var addemail = function addemail(ev) {
   ev.preventDefault(); //to stop the form submitting

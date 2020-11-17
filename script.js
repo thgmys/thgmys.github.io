@@ -1,5 +1,4 @@
 let emails = [];
-// example {id:1592304983049, title: 'Deadpool', year: 2015}
 const addemail = (ev) => {
     ev.preventDefault(); //to stop the form submitting
     let data = {
