@@ -1,66 +1,174 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>thgasym</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
-
-<body>
+  </head>
+  <body>
     <!-- Wrapper -->
     <div id="wrapper">
-
-        <!-- Intro -->
-        <section id="intro" class="wrapper style1 fullscreen fade-up">
+      <!-- Intro -->
+      <section id="intro">
+        <div class="inner">
+          <h1>Portfolio page for personal projects in ethical hacking</h1>
+          <p>
+            I am a Final Year Computer Science Student @
+            <a href="https://www.tcd.ie/">Trinity College Dublin</a>
+          </p>
+          <p>
+            I am very interested in cyber security and ethical hacking so I
+            thought I would make a page dedicated to my progression in the
+            field. Since there are no available modules for me to take in
+            University, I decided to take it upon myself to teach myself more
+            about hacking.
+          </p>
+          <p>
+            I am learning how to use some useful tools like nmap, metasploit and
+            nessus
+          </p>
+        </div>
+        <p>
+          ________________________________________________________________________________________________________________________________________________________________
+        </p>
+      </section>
+      <!-- POSTS -->
+      <section id="posts">
+        <h1>Posts</h1>
+        <section>
+          <div class="content">
             <div class="inner">
-                <h1>Portfolio page for personal projects in ethical hacking</h1>
-                <p>I am a Final Year Computer Science Student @ <a href="https://www.tcd.ie/">Trinity College Dublin</a></p>
-                <p>I am very interested in cyber security and ethical hacking so I thought I would make a page dedicated to my progression in the field. Since there are no available modules for me to take in University, I decided to take it upon myself to teach myself more about hacking.</p>
-                <p>I am learning how to use some useful tools like nmap, metasploit and nessus</p>
+              <div class="09__22">
+                <h3><strong>SEP-PRESENT 2022</strong></h3>
+                <p>Currently working on android privacy project</p>
+                <p><strong> projected end: </strong>april 2023</p>
+                <p>
+                  <strong>ref. Project 1</strong>
+                </p>
+              </div>
+              <div class="060822">
+                <h3><strong>JUN - AUG 2022</strong></h3>
+                <p>
+                  I set up my virtual environment using virtualbox and an ISO
+                  image of Kali Linux from the official kali linux website.
+                </p>
+                <p>
+                  I learnt about the 5 stages of penetration testing in greater
+                  detail:
+                </p>
+                <ul>
+                  <strong>
+                    <p>reconnaisance</p>
+                    <p>scanning</p>
+                    <p>vulnerability assessment</p>
+                    <p>exploitation</p>
+                    <p>report</p>
+                  </strong>
+                </ul>
+                <p>
+                  I researched into known vulnerabilities and reasons as to why
+                  they promote security concerns.
+                </p>
+                <p>
+                  <strong>ref. Project 2</strong>
+                </p>
+              </div>
             </div>
+          </div>
         </section>
-        <!-- POSTS -->
-        <section id="one">
-            <section>
-                <div class="content">
-                    <div class="inner">
-                        <h1>Posts</h1>
-                        <p><strong>JUNE - JULY 2022</strong></p>
-                        <p>I set up my virtual environment using virtualbox and an ISO image of Kali Linux from the official kali linux website.</p>
-                        <p>I learnt about the 5 stages of penetration testing in greater detail</p>
-                        <ul><strong><p>reconnaisance</p><p>scanning</p><p>vulnerability assessment</p><p>exploitation</p><p>report</p></strong></ul>
-                        <p>Currently messing around with python scripts</p>
-                    </div>
-                </div>
-            </section>
+        <p>
+          ________________________________________________________________________________________________________________________________________________________________
+        </p>
+      </section>
+      <!-- Projects -->
+      <section id="projects">
+        <section>
+          <div class="content">
+            <div class="inner">
+              <h2>Projects</h2>
+              <div class="fyp">
+                <h1>
+                  1. Measuring privacy of android apps using mitmproxy through
+                  raspi wifi AP
+                </h1>
+                <p>
+                  Android apps, including system apps, often send messages to
+                  multiple servers/network endpoints. Since a great many
+                  messages are sent, manually analysing the privacy of the set
+                  of network connections made by an app is time-consuming and
+                  impractical. The aim of this project is to investigate methods
+                  for automating this analysis so that it scales, and then
+                  applying the developed methods to measurements from Android
+                  handsets.
+                </p>
+                <p>
+                  The messages sent over Android network connections often
+                  contain identifiers. Examples of privacy-preserving
+                  identifiers include session identifiers that link a sequence
+                  of messages together and single-use identifiers to avoid
+                  processing of duplicate messages. These are quite private
+                  because they do not persist for long periods and so make it
+                  hard to link the messages to a specific handset or user.
+                  However, apps sometimes also use much longer-lived identifiers
+                  e.g. the handset phone number, the handset hardware serial
+                  number, the Google user account email, the IMEI (which
+                  uniquely identifies the handset SIM slot). There can be
+                  legitimate reasons for this, but privacy best practice is to
+                  only use such identifiers when it is strictly necessary, to
+                  limit their use to a small number of connections, and to avoid
+                  “joining” or linking short-lived identifiers with longer-lives
+                  ones.
+                </p>
+                <p>
+                  The goal of the project is to build a graph linking messages
+                  sharing the same identifiers and then analysing the properties
+                  of this graph e.g. the connected components (the component
+                  with long-lived identifiers should be small and disconnected
+                  from the other components). By measuring the identifier graph
+                  properties we can hopefully develop a quantitative measure of
+                  privacy that can be used to rank apps.
+                </p>
+              </div>
+              <div class="metasploitable">
+                <h1>
+                  2. Metasploitable exploits (learning basics of exploiting
+                  vulnerable systems)
+                </h1>
+                <p>
+                  Learnt the basics of scanning and exploits with Kali Linux and
+                  Metaploitable.
+                </p>
+                <p>
+                  <strong>root backdoor exploit - vsftpd 2.3.4</strong>
+                  <a href="exploits/vsftpd234.html">report</a>
+                </p>
+                <p>
+                  <strong>bindshell exploit</strong>
+                  <a href="exploits/bindshell.html">report</a>
+                </p>
+                <p>
+                  <strong>telnet - information disclosure</strong>
+                  <a href="exploits/telnet.html">report</a>
+                </p>
+                <p>
+                  <strong>root backdoor exploit - samba unknown version</strong>
+                  <a href="exploits/samba.html">report</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
-
-        <!-- Projects -->
-        <section id="one">
-            <section>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Projects</h2>
-                        <h1>Metasploitable successful exploits</h1>
-                        <p>Learnt the basics of scanning and exploits with Kali Linux and Metaploitable.</p>
-                        <p><strong>root backdoor exploit - vsftpd 2.3.4</strong> <a href="exploits/vsftpd234.html">report</a></p>
-                        <p><strong>bindshell exploit</strong> <a href="exploits/bindshell.html">report</a></p>
-                        <p><strong>telnet - information disclosure</strong> <a href="exploits/telnet.html">report</a></p>
-                        <p><strong>root backdoor exploit - samba unknown version</strong> <a href="exploits/samba.html">report</a></p>
-                    </div>
-                </div>
-            </section>
-        </section>
-
+      </section>
+    </div>
     <!-- Footer -->
     <footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-        <h2><strong>thgasym - updated 7/2022</strong></h2>
-        </div>
+      <div class="inner">
+        <h2><strong>thgasym - updated 10/2022</strong></h2>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
