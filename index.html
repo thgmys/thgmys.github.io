@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>thgasym</title>
+    <title>thgmys</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -15,71 +15,15 @@
       <!-- Intro -->
       <section id="intro">
         <div class="inner">
-          <h1>Portfolio page for personal projects in ethical hacking</h1>
+          <h1>Portfolio page for personal projects in cybersecurity</h1>
           <p>
-            I am a Final Year Computer Science Student @
-            <a href="https://www.tcd.ie/">Trinity College Dublin</a>
+            I recently graduated from <a href="https://www.tcd.ie/">Trinity College Dublin</a> with upper second class honours in Computer Science.
           </p>
           <p>
-            I am very interested in cyber security and ethical hacking so I
-            thought I would make a page dedicated to my progression in the
-            field. Since there are no available modules for me to take in
-            University, I decided to take it upon myself to teach myself more
-            about hacking.
-          </p>
-          <p>
-            I am learning how to use some useful tools like nmap, metasploit and
-            nessus
+            I am very interested in cyber security and ethical hacking.
+            Currently I am enrolled in a course on <a href="https://coursera.org">Coursera</a> to get the Google Cybersecurity Professional Certificate. The course should be completed by the end of July 2023.
           </p>
         </div>
-        <p>
-          ________________________________________________________________________________________________________________________________________________________________
-        </p>
-      </section>
-      <!-- POSTS -->
-      <section id="posts">
-        <h1>Posts</h1>
-        <section>
-          <div class="content">
-            <div class="inner">
-              <div class="09__22">
-                <h3><strong>SEP-PRESENT 2022</strong></h3>
-                <p>Currently working on android privacy project</p>
-                <p><strong> projected end: </strong>april 2023</p>
-                <p>
-                  <strong>ref. Project 1</strong>
-                </p>
-              </div>
-              <div class="060822">
-                <h3><strong>JUN - AUG 2022</strong></h3>
-                <p>
-                  I set up my virtual environment using virtualbox and an ISO
-                  image of Kali Linux from the official kali linux website.
-                </p>
-                <p>
-                  I learnt about the 5 stages of penetration testing in greater
-                  detail:
-                </p>
-                <ul>
-                  <strong>
-                    <p>reconnaisance</p>
-                    <p>scanning</p>
-                    <p>vulnerability assessment</p>
-                    <p>exploitation</p>
-                    <p>report</p>
-                  </strong>
-                </ul>
-                <p>
-                  I researched into known vulnerabilities and reasons as to why
-                  they promote security concerns.
-                </p>
-                <p>
-                  <strong>ref. Project 2</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
         <p>
           ________________________________________________________________________________________________________________________________________________________________
         </p>
@@ -90,57 +34,51 @@
           <div class="content">
             <div class="inner">
               <h2>Projects</h2>
+
               <div class="fyp">
                 <h1>
-                  1. Measuring privacy of android apps using mitmproxy through
-                  raspi wifi AP
+                  1. Capstone Project - Investigation and Analysis of Network Traffic Sent by Android Social Media Applications
                 </h1>
                 <p>
-                  Android apps, including system apps, often send messages to
-                  multiple servers/network endpoints. Since a great many
-                  messages are sent, manually analysing the privacy of the set
-                  of network connections made by an app is time-consuming and
-                  impractical. The aim of this project is to investigate methods
-                  for automating this analysis so that it scales, and then
-                  applying the developed methods to measurements from Android
-                  handsets.
+                My capstone project dealt with analysing potential privacy risks stemming from various pieces of user information being collected and sent  to back-end servers of applications without a users' explicit consent.
                 </p>
                 <p>
-                  The messages sent over Android network connections often
-                  contain identifiers. Examples of privacy-preserving
-                  identifiers include session identifiers that link a sequence
-                  of messages together and single-use identifiers to avoid
-                  processing of duplicate messages. These are quite private
-                  because they do not persist for long periods and so make it
-                  hard to link the messages to a specific handset or user.
-                  However, apps sometimes also use much longer-lived identifiers
-                  e.g. the handset phone number, the handset hardware serial
-                  number, the Google user account email, the IMEI (which
-                  uniquely identifies the handset SIM slot). There can be
-                  legitimate reasons for this, but privacy best practice is to
-                  only use such identifiers when it is strictly necessary, to
-                  limit their use to a small number of connections, and to avoid
-                  “joining” or linking short-lived identifiers with longer-lives
-                  ones.
+                Privacy concerns are evaluated in this research by intercepting telemetry data sent in
+                requests by social media applications to their respective servers. These requests are
+                then decoded so that the contents of each request can be manually analysed. An
+                evaluation of the potential privacy concerns aims to provide social media users with
+                more detail of how these applications can continue to track their users after they have
+                opted-out of various privacy preserving settings.
                 </p>
                 <p>
-                  The goal of the project is to build a graph linking messages
-                  sharing the same identifiers and then analysing the properties
-                  of this graph e.g. the connected components (the component
-                  with long-lived identifiers should be small and disconnected
-                  from the other components). By measuring the identifier graph
-                  properties we can hopefully develop a quantitative measure of
-                  privacy that can be used to rank apps.
+                It is found that Twitter sends a large amount of sensitive user data tagged with short
+                lived identifiers alongside longer lived identifiers. The idea behind using short lived
+                identifiers is that they do not exist for long periods and thus, it is difficult to link
+                them to specific events. This act is undermined by the fact that they are sent together
+                with longer lived identifiers. This allows for the de-anonymisation of the short lived
+                identifiers. By de-anonymising the short lived identifiers, a privacy concern becomes
+                more prominent in that, detailed usage information can potentially be connected to a
+                users’ real identity.
                 </p>
+                <p>
+                The data sent by Twitter contains several persistent identifiers which can be used to
+                link back to a user(s) accessing the Twitter application through the same device. A
+                large amount of data is logged by Twitter services without providing the user with a
+                clear decision to opt-out of this data collection. Requests are also sent to
+                Google/Firebase Analytics which introduces the potential for tracking of users across
+                applications through the use of these persistent identifiers. When compared against
+                Mastodon, a social media platform that prioritises user privacy, it is concluded that
+                very little data collection is necessary in order for a social media site to operate.
+                </p>
+
               </div>
+
               <div class="metasploitable">
                 <h1>
-                  2. Metasploitable exploits (learning basics of exploiting
-                  vulnerable systems)
+                  2. Metasploitable exploits (learning basics of exploiting vulnerable systems)
                 </h1>
                 <p>
-                  Learnt the basics of scanning and exploits with Kali Linux and
-                  Metaploitable.
+                  Learned the basics of scanning and exploits on Kali Linux using an intentionally vulnerable system called Metaploitable. 
                 </p>
                 <p>
                   <strong>root backdoor exploit - vsftpd 2.3.4</strong>
@@ -159,6 +97,32 @@
                   <a href="exploits/samba.html">report</a>
                 </p>
               </div>
+
+              <div class="ctf">
+                <h1>
+                  3. <a href="https://www.picoctf.org/">PicoCTF</a>
+                </h1>
+                <p>I enjoy getting involved in Capture the Flag challenges. They are excellent practice and teach me a lot.</p>
+              </div>
+
+
+              <div class="statement">
+                <h1>
+                  4. Professional Statement
+                </h1>
+                <p>
+                  <a href="">report</a>
+                </p>
+              </div>
+
+              <div class="future">Future projects that I am excited about: </div>
+              <ul>
+                <li> Continuing the research of my capstone project to look into various other applications for privacy risks </li>
+                <li> Using Linux commands to manage file permissions </li>
+                <li> Identifying vulnerabilities for small businesses </li>
+                <li> Applying filters to SQL queries </li>    
+              </ul>
+
             </div>
           </div>
         </section>
@@ -167,7 +131,7 @@
     <!-- Footer -->
     <footer id="footer" class="wrapper style1-alt">
       <div class="inner">
-        <h2><strong>thgasym - updated 10/2022</strong></h2>
+        <h2><strong>thgmys - updated 06/2023</strong></h2>
       </div>
     </footer>
   </body>
