@@ -9,6 +9,17 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
+function toggleContent(element) {
+  element.classList.toggle("active");
+
+  var content = element.nextElementSibling;
+  if (element.classList.contains("active")) {
+    content.style.maxHeight = content.scrollHeight + "px";
+  } else {
+    content.style.maxHeight = 0;
+  }
+}
+
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
