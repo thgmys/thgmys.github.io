@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>thgmys Blog</title>
+    <title>Cyber Blog</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -9,10 +9,24 @@
     />
     <link rel="stylesheet" href="mod-simple.css" />
     <script defer src="script.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
 
     <!-- css modified from https://github.com/kevquirk/simple.css it looks a lot better than raw html lol-->
   </head>
@@ -33,162 +47,28 @@
 
         <p>i like cyber security and ethical hacking</p>
 
-        <p>i play some music and i enjoy music production :) <a href="music.html">take a look</a></p>
-        <h7> <p>
-          below are some projects and stuff i have done. click on them for more
-          details
-        </p>
+        <p>i play some music too :) <a href="music.html">take a look</a></p>
       </section>
 
       <!-- Projects -->
       <section id="projects">
         <div id="fyp">
           <div class="hidden" class="collapsible" onclick="toggleContent(this)">
-            <h3>
-              Capstone Project - Investigation and Analysis of Network Traffic
-              Sent by Android Social Media Applications
-            </h3>
+            <h3>Social Media Android Hacking</h3>
           </div>
           <div class="content">
             <p>
-              My capstone project dealt with analysing potential privacy risks
-              stemming from various pieces of user information being collected
-              and sent to back-end servers of applications without the users'
-              explicit consent.
+              Analysis of potential privacy risks stemming user information
+              being collected and sent to back-end servers of applications
+              without explicit consent.
             </p>
+            <br />
             <p>
-              Privacy concerns were evaluated in my research by intercepting
-              telemetry data sent in requests by social media applications to
-              their respective servers. These requests were then decoded so that
-              the contents of each request could be manually analysed. An
-              evaluation of the potential privacy concerns aimed to provide
-              social media users with more detail of how these applications can
-              continue to track their users after they have opted-out of various
-              privacy preserving settings.
+              Evaluated by intercepting telemetry by social media applications.
+              My goal for highlighting privacy concerns is to provide social
+              media users with more detail of how these applications can track
+              users after having opted-out of unwanted data collection.
             </p>
-            <p>
-              It was found that Twitter sends a large amount of sensitive user
-              data tagged with short lived identifiers alongside longer lived
-              identifiers. The idea behind using short lived identifiers is that
-              they do not exist for long periods and thus, it is difficult to
-              link them to specific events. This act is undermined by the fact
-              that they are sent together with longer lived identifiers. This
-              allows for the de-anonymisation of the short lived identifiers. By
-              de-anonymising the short lived identifiers, a privacy concern
-              becomes more prominent in that, detailed usage information can
-              potentially be connected to a users' real identity.
-            </p>
-            <p>
-              The data sent by Twitter contains several persistent identifiers
-              which can be used to link back to a user(s) accessing the Twitter
-              application through the same device. A large amount of data is
-              logged by Twitter services without providing the user with a clear
-              prompt to opt-out of this data collection. Requests are also sent
-              to Google/Firebase Analytics which introduces the potential for
-              tracking of users across applications through the use of these
-              persistent identifiers. When compared against Mastodon, a social
-              media platform that prioritises user privacy, it was concluded
-              that very little data collection is actually necessary in order
-              for a popular social media site to function and that Twitter is
-              exploiting the trust of its users.
-            </p>
-          </div>
-        </div>
-        <div id="foobar">
-          <div class="hidden" class="collapsible" onclick="toggleContent(this)">
-            <h3>Google FooBar Challenge</h3>
-          </div>
-          <div class="content">
-            <p>
-              Recently I was invited to take part in Google's FooBar challenge.
-              Originally the challenge was made for Google to find talented
-              programmers to hire.
-            </p>
-            <p>
-              The challenge is split up into 5 levels and the user has the
-              option of completing each problem in either Python or Java. I
-              chose to use Python.
-            </p>
-            <ul>
-              <p><strong>Level 1</strong> - Re-ID</p>
-              <p>
-                <strong>Level 2</strong> - Gearing Up for Destruction, Ion Flux
-                Relabeling
-              </p>
-              <p>
-                <strong>Level 3</strong> - Bomb Baby, Doomsday Fuel, (in
-                progress)
-              </p>
-              <!--              <p><strong>Level 4</strong></p>
-                  <p><strong>Level 5</strong></p> -->
-              <!-- add pages explaining thought process for each solution -->
-            </ul>
-          </div>
-        </div>
-
-        <div id="googcert">
-          <div class="hidden" class="collapsible" onclick="toggleContent(this)">
-            <h3>Google Cybersecurity Certificate - Coursera</h3>
-          </div>
-          <div class="content">
-            <p>
-              Recently I completed an online course dealing with topics in
-              cybersecurity. The course is very well structured and goes into a
-              lot of depth explaining relevant concepts. Given that I already
-              have a background in computer science, a large portion of the
-              course seemed like a refresher but it was definitely beneficial
-              nonetheless.
-            </p>
-            <p>
-              The certificate is broken up into 8 courses, each being taught by
-              a specialist working at Google in a different area of
-              cybersecurity.
-            </p>
-            <ul>
-              <li>Foundations of Cybersecurity</li>
-              <!-- <ul>
-                    In the first course of the certificate, core security
-                    concepts are introduced and the importance of security is
-                    outlined. The roles of entry-level security analysts are
-                    explored as well as skills related to the role. Next,
-                    security frameworks and controls such as the CIA triad and
-                    the NIST CSF are explained. Finally, common tools and
-                    programming languages used by security analysts are explored
-                    such as SIEM tools, playbooks, SQL and Python.
-                  </ul> -->
-              <li>Play it Safe: Manage Security Risks</li>
-              <ul></ul>
-
-              <li>Connect and Protect: Networks and Network Security</li>
-              <ul></ul>
-
-              <li>Tools of the Trade: Linux and SQL</li>
-              <ul></ul>
-
-              <li>Assets, Threats, and Vulnerabilities</li>
-              <ul></ul>
-
-              <li>Sound the Alarm: Detection and Response</li>
-              <ul></ul>
-
-              <li>Automate Cybersecurity Tasks with Python</li>
-              <ul></ul>
-
-              <li>Put it to Work: Prepare for Cybersecurity Jobs</li>
-              <ul></ul>
-            </ul>
-          </div>
-        </div>
-
-        <div id="data-analysis">
-          <div class="hidden" class="collapsible" onclick="toggleContent(this)">
-            <h3>Data Analysis Project</h3>
-          </div>
-          <div class="content">
-            This data analysis project was a continuation of the methods of
-            machine learning taught to me in college. The goal was to analyse
-            reviews for correlations between the listings having more features/
-            the quality of the features and the overall rating received.
           </div>
         </div>
 
@@ -198,30 +78,19 @@
           </div>
           <div class="content">
             <ul>
-              <li>continuing to look into applications for privacy risks</li>
-              <li>trying todo bug bounty</li>
-              <li>learning how to make electronics</li>
+              <li>bug bounty</li>
+              <li>electronics</li>
               <li>
-                Raspberry Pi Pico Rubber Ducky - done
+                Raspberry Pi Pico
                 <ul>
                   <li>did a bita soldering</li>
                   <li>script on pico</li>
                   <li>bim bim bam bam</li>
                 </ul>
               </li>
-              <li>Raspberry Pi Loop Station - in progress</li>
               <li>
-                learning rust - in progress
-                <ul>
-                  <li>chess</li>
-                  <li>tauri apps</li>
-                  <li></li>
-                </ul>
-              </li>
-              <li>
-                Procedural Generation Project - i saw a video that i found
-                fascinating on procedural generation and i want to do a project
-                in order to learn more about it
+                rust
+                <ul></ul>
               </li>
             </ul>
           </div>
@@ -231,7 +100,7 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="inner">
-        <h4><strong>updated 02/2024</strong></h4>
+        <h4><strong>updated 07/2024</strong></h4>
       </div>
     </footer>
   </body>
